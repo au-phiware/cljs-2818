@@ -1,0 +1,9 @@
+/out/
+/main.js
+/*.jar
+/resources/main.js
+/resources/main.out/
+/node_modules/
+/target/
+/*.log
+/package*.json
