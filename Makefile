@@ -11,7 +11,7 @@ open: target
 	open target/index.html
 
 test: target
-	chrome --headless --dump-dom file://$(PWD)/target/index.html | grep '^Hello, 'World$
+	chrome --headless --dump-dom file://$(CURDIR)/target/index.html | grep '^Hello, 'World$
 
 cljs.jar:
 	ln -s $(CLJS_HOME)/target/cljs.jar
