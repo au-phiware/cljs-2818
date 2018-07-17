@@ -4,6 +4,9 @@ target: cljs.jar build.clj $(shell find src es6 resources node_modules 2>/dev/nu
 	rsync -r --del resources/ target/
 	java -cp cljs.jar:src clojure.main build.clj
 
+node_modules:
+	mkdir node_modules
+
 open: target
 	open target/index.html
 
